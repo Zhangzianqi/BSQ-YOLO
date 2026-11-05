@@ -63,7 +63,12 @@ Training uses random initialization (`pretrained=False`). The default seed is 6,
 
 The **Small Floating Litter Dataset (SFLD)** contains 2,939 images and 9,844 annotated instances across six categories; small objects account for over 74% of the instances.
 
-SFLD will be distributed separately through Baidu Netdisk. The download link will be added after the dataset is uploaded. Images, annotations, trained weights, and historical experiment outputs are not included in this source release.
+SFLD is available separately through Baidu Netdisk:
+
+- Download: [SFLD.zip (Baidu Netdisk)](https://pan.baidu.com/s/1Xx1QOHH-3BuOJUS4jZDGzg?pwd=5mfb)
+- Extraction code: `5mfb`
+
+Images, annotations, trained weights, and historical experiment outputs are not included in this source release.
 
 Class IDs: `0 bottle`, `1 can`, `2 cup`, `3 box`, `4 plastic-bag`, `5 other-waste`.
 
@@ -71,7 +76,7 @@ Class IDs: `0 bottle`, `1 can`, `2 cup`, `3 box`, `4 plastic-bag`, `5 other-wast
 
 - [x] BSQ-YOLO source code and final network configuration
 - [x] Original YOLO11n baseline configuration
-- [ ] SFLD dataset download link
+- [x] SFLD dataset download link
 - [ ] Trained weights and TensorRT deployment scripts for Jetson Orin NX
 
 ## Acknowledgments and license
