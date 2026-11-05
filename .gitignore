@@ -1,0 +1,59 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# Dataset contents are distributed separately
+/datasets/
+/data/
+ultralytics/datasets/
+ultralytics/publicly_datasets/
+*.cache
+
+# Training/evaluation/prediction/benchmark outputs
+/runs/
+/outputs/
+/output/
+/wandb/
+/mlruns/
+/lightning_logs/
+/weights/
+slurm-*.out
+events.out.tfevents.*
+*.log
+
+# Checkpoints and exported model binaries
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+*.torchscript
+*.tflite
+*.pb
+*.npy
+*.npz
+*.zip
+*.tar
+*.tar.gz
+
+# Machine settings and credentials
+.runtime/
+**/settings.json
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.pem
+*.key

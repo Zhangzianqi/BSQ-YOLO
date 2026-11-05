@@ -1,0 +1,14 @@
+# SFLD dataset configuration. Images and annotations are distributed separately.
+# Replace this placeholder with the absolute path to the downloaded dataset.
+path: /path/to/SFLD
+train: train/images
+val: val/images
+test: test/images
+
+names:
+  0: bottle
+  1: can
+  2: cup
+  3: box
+  4: plastic-bag
+  5: other-waste
