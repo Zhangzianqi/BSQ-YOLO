@@ -59,5 +59,8 @@ Thumbs.db
 *.key
 
 # Explicitly published final-model checkpoints
+/experiments/BSQ-YOLO/*
+!/experiments/BSQ-YOLO/weights/
+/experiments/BSQ-YOLO/weights/*
 !/experiments/BSQ-YOLO/weights/best.pt
 !/experiments/BSQ-YOLO/weights/last.pt

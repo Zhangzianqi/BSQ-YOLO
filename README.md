@@ -32,7 +32,7 @@ BSQ-YOLO/
 ├── ultralytics/          # Customized framework and model implementations
 │   └── cfg/models/11/   # Final BSQ-YOLO and original YOLO11n YAMLs
 ├── configs/data.yaml    # Dataset paths and class names
-├── experiments/BSQ-YOLO/ # Released final-model weights and training results
+├── experiments/BSQ-YOLO/ # Released final-model weights
 ├── train.py             # Training entry point
 ├── val.py               # Validation/test entry point
 ├── predict.py           # Inference entry point
@@ -58,21 +58,16 @@ python val.py --weights /path/to/best.pt --data configs/data.yaml --split test -
 python predict.py --weights /path/to/best.pt --source /path/to/images --device 0
 ```
 
-Training uses random initialization (`pretrained=False`). The training script defaults to seed 6; the released checkpoint's original settings are recorded in [args.yaml](experiments/BSQ-YOLO/args.yaml).
+Training uses random initialization (`pretrained=False`). The training script defaults to seed 6.
 
-## Trained model and results
+## Trained weights
 
-The final BSQ-YOLO run is available in [experiments/BSQ-YOLO](experiments/BSQ-YOLO). Original filenames and training records are retained.
+The final BSQ-YOLO checkpoints are available below:
 
 | Artifact | File |
 | --- | --- |
 | Best checkpoint | [best.pt](experiments/BSQ-YOLO/weights/best.pt) |
 | Last checkpoint | [last.pt](experiments/BSQ-YOLO/weights/last.pt) |
-| Training metrics | [results.csv](experiments/BSQ-YOLO/results.csv) |
-| Training curves | [results.png](experiments/BSQ-YOLO/results.png) |
-| Recorded training settings | [args.yaml](experiments/BSQ-YOLO/args.yaml) |
-
-Precision–recall curves, confusion matrices, and training/validation examples are included in the same folder.
 
 ## Dataset
 
@@ -83,7 +78,7 @@ SFLD is available separately through Baidu Netdisk:
 - Download: [SFLD.zip (Baidu Netdisk)](https://pan.baidu.com/s/1Xx1QOHH-3BuOJUS4jZDGzg?pwd=5mfb)
 - Extraction code: `5mfb`
 
-The complete dataset is distributed through the link above. The repository contains the final-model weights and training results linked in the preceding section.
+The complete dataset is distributed through the link above. The repository contains the final-model weights linked in the preceding section.
 
 Class IDs: `0 bottle`, `1 can`, `2 cup`, `3 box`, `4 plastic-bag`, `5 other-waste`.
 
@@ -92,8 +87,7 @@ Class IDs: `0 bottle`, `1 can`, `2 cup`, `3 box`, `4 plastic-bag`, `5 other-wast
 - [x] BSQ-YOLO source code and final network configuration
 - [x] Original YOLO11n baseline configuration
 - [x] SFLD dataset download link
-- [x] Final-model trained weights and training results
-- [ ] TensorRT deployment scripts for Jetson Orin NX
+- [x] Final-model trained weights
 
 ## Acknowledgments and license
 
