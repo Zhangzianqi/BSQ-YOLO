@@ -52,13 +52,13 @@ pip install -r requirements.txt
 Set the absolute dataset path in `configs/data.yaml`. Run commands from the repository root:
 
 ```bash
-python train.py --model bsq-yolo --data configs/data.yaml --device 0
-python train.py --model yolo11n --data configs/data.yaml --device 0
+python train.py --model bsq-yolo --data configs/data.yaml --device 0 --seed 0
+python train.py --model yolo11n --data configs/data.yaml --device 0 --seed 0
 python val.py --weights /path/to/best.pt --data configs/data.yaml --split test --device 0
 python predict.py --weights /path/to/best.pt --source /path/to/images --device 0
 ```
 
-Training uses random initialization (`pretrained=False`). The training script defaults to seed 6.
+Training uses random initialization (`pretrained=False`) with `seed=0` by default for both BSQ-YOLO and YOLO11n.
 
 ## Trained weights
 

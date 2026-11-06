@@ -20,7 +20,7 @@ def main():
     parser.add_argument("--batch", type=int, default=16)
     parser.add_argument("--imgsz", type=int, default=640)
     parser.add_argument("--workers", type=int, default=6)
-    parser.add_argument("--seed", type=int, default=6)
+    parser.add_argument("--seed", type=int, default=0, help="Random seed (default: 0)")
     args = parser.parse_args()
 
     from ultralytics import YOLO
