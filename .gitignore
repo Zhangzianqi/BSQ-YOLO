@@ -57,3 +57,7 @@ events.out.tfevents.*
 Thumbs.db
 *.pem
 *.key
+
+# Explicitly published final-model checkpoints
+!/experiments/BSQ-YOLO/weights/best.pt
+!/experiments/BSQ-YOLO/weights/last.pt
