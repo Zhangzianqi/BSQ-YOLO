@@ -1,0 +1,5 @@
+# Core audit/metric/cache dependencies only. Reuse the existing project environment.
+# No ultralytics, torch or CUDA installation/upgrade is requested by this file.
+numpy>=1.23
+PyYAML>=5.3.1
+Pillow>=7.1.2
