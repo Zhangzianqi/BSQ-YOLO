@@ -60,7 +60,7 @@ python predict.py --weights /path/to/best.pt --source /path/to/images --device 0
 
 Training uses random initialization (`pretrained=False`) with `seed=0` by default for both BSQ-YOLO and YOLO11n.
 
-The [size-group evaluation program](small_objects_test_legacy/) uses the original manuscript's small-object definition. Its directory includes the matching rules and usage instructions.
+The [size-group evaluation program](small_objects_test_legacy/) uses the original manuscript's small-object definition. Its directory includes the matching rules and usage instructions. The [COCO evaluation program](small_objects_test_coco/) reports the small- and medium-object AP used in the revised Table 5.
 
 ## Trained weights
 
